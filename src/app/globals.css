@@ -4,6 +4,7 @@
 	src: url(/fonts/Hesterica.ttf);
 	font-family: 'Hesterica';
 }
+
 @font-face{
     src: url(/fonts/Gilroy-Black.ttf);
     font-family: 'GilroyBlack';
@@ -274,7 +275,8 @@ textarea {
 }
 
 .sec-pad {
-	padding: 12rem 0
+	
+	padding: 6rem 0
 }
 
 .text-primary {
@@ -489,36 +491,6 @@ textarea {
 	font-size: 1.6rem
 }
 
-.footer {
-  background-color: #ece3f4;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer .copyright {
-  font-size: 2rem;
-  color: #0e0b0b;
-  margin-bottom: 10px;
-}
-
-.footer .social-icons {
-  margin-top: 10px;
-  font-size: 3rem;
-}
-
-.footer .social-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #100d18;
-  transition: color 0.3s;
-}
-
-.footer .social-icons a:hover {
-  color: #2a3bd0;
-}
-
-
-
 @keyframes wheel {
 	to {
 		opacity: 0;
@@ -666,7 +638,9 @@ textarea {
 /* Projects Section Styles */
 .projects {
 	background: #fafafa;
-	padding: 12rem 0;
+	padding: 6rem 0;
+
+	margin: 3rem 0;
 }
 
 .projects-container {
@@ -1071,12 +1045,13 @@ textarea {
 
 /* Contact Section Styles */
 .contact {
-	background: #f8f9fa;
+	
+	background: #ffffff;
 	position: relative;
 }
 
 .contact-form-container {
-	background: #fff;
+	background: #b0aaf3;
 	border-radius: 1.5rem;
 	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 	padding: 4rem;
