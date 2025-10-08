@@ -56,10 +56,10 @@ export default function Header() {
               <Link className="header-link" href="/">Home</Link>
             </li>
             <li className="header-link-wrapper">
-              <a className="header-link" href="/#about">Profile</a>
+              <a className="header-link" href="#about">Profile</a>
             </li>
             <li className="header-link-wrapper">
-              <a className="header-link" href="/#projects">Projects</a>
+              <a className="header-link" href="#projects">Projects</a>
             </li>
             <li className="header-link-wrapper">
               <a className="header-link" href="https://github.com/amanbind898">
@@ -94,13 +94,13 @@ export default function Header() {
               <Link href="/" onClick={closeMenu}>Home</Link>
             </li>
             <li className="header__sm-menu-link">
-              <a href="/#about" onClick={closeMenu}>About</a>
+              <a href="#about" onClick={closeMenu}>About</a>
             </li>
             <li className="header__sm-menu-link">
-              <a href="/#projects" onClick={closeMenu}>Projects</a>
+              <a href="#projects" onClick={closeMenu}>Projects</a>
             </li>
             <li className="header__sm-menu-link">
-              <a href="/#contact" onClick={closeMenu}>Contact</a>
+              <a href="#contact" onClick={closeMenu}>Contact</a>
             </li>
           </ul>
         </div>

@@ -9,19 +9,19 @@ export default function About() {
             About <span style={{color: 'rgb(55, 0, 255)'}}>Me</span>
           </span>
           <span className="heading-sec__sub">
-            I'm <strong>Aman Bind</strong>, a passionate <em>4th-year</em> B.Tech student at <strong>IIIT Bhagalpur</strong>, pursuing <em>Computer Science and Engineering</em>.  
+            I&apos;m <strong>Aman Bind</strong>, a passionate <em>4th-year</em> B.Tech student at <strong>IIIT Bhagalpur</strong>, pursuing <em>Computer Science and Engineering</em>.  
             Originally from <strong>Azamgarh, Uttar Pradesh</strong>, I have a deep interest in <em>coding, web development, and problem-solving</em>.  
             
             My journey in technology has been driven by curiosity and a desire to build impactful solutions.  
             I enjoy working on <em>full-stack web development</em>, exploring <em>AI-driven applications</em>, and continuously refining my coding skills.  
-            Whether it's crafting scalable web applications or tackling complex problems, I thrive on challenges that push me to learn and innovate.  
+            Whether it&apos;s crafting scalable web applications or tackling complex problems, I thrive on challenges that push me to learn and innovate.  
 
-            As a final-year student actively looking for a <strong>stable, growth-oriented job opportunity</strong>, I'm keen to apply my skills in a professional environment where I can contribute meaningfully.  
+            As a final-year student actively looking for a <strong>stable, growth-oriented job opportunity</strong>, I&apos;m keen to apply my skills in a professional environment where I can contribute meaningfully.  
 
             Beyond academics, I actively participate in <em>hackathons, coding competitions, and open-source projects</em>, aiming to expand my knowledge and collaborate with like-minded developers.  
-            I believe in lifelong learning and I'm always open to new opportunities, collaborations, and exciting projects.  
+            I believe in lifelong learning and I&apos;m always open to new opportunities, collaborations, and exciting projects.  
 
-            Let's connect and build something amazing together! 🚀
+            Let&apos;s connect and build something amazing together! 🚀
           </span>
         </h2>
 
