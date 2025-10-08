@@ -42,7 +42,7 @@ export default function Hero() {
             <h1>
               I love to create <br />
               <span className="crsv">&quot;flawless&quot;</span>
-              products.
+              digital solutions.
             </h1>
           </div>
           
