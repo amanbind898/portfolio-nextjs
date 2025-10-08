@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Header() {
@@ -52,7 +53,7 @@ export default function Header() {
         <div className="header-main">
           <ul className="header-links">
             <li className="header-link-wrapper">
-              <a className="header-link" href="/">Home</a>
+              <Link className="header-link" href="/">Home</Link>
             </li>
             <li className="header-link-wrapper">
               <a className="header-link" href="/#about">Profile</a>
@@ -90,7 +91,7 @@ export default function Header() {
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="/" onClick={closeMenu}>Home</a>
+              <Link href="/" onClick={closeMenu}>Home</Link>
             </li>
             <li className="header__sm-menu-link">
               <a href="/#about" onClick={closeMenu}>About</a>

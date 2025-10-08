@@ -1125,7 +1125,7 @@ textarea {
 	padding: 1.8rem 3rem;
 	font-size: 1.6rem;
 	font-weight: 600;
-	background: linear-gradient(135deg, #11009E 0%, #7a6ff3 100%);
+	background:  #7a6ff3;
 	color: #fff;
 	border: none;
 	border-radius: 1rem;
@@ -1149,7 +1149,7 @@ textarea {
 }
 
 .contact__btn:hover {
-	background: linear-gradient(135deg, #0d0078 0%, #6b5ce6 100%);
+	background:  #0d0078 ;
 	transform: translateY(-0.3rem);
 	box-shadow: 0 1rem 2.5rem rgba(17, 0, 158, 0.4);
 }
