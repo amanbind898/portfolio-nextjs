@@ -22,7 +22,7 @@ export default function Projects() {
       image: "/images/interview.png",
       title: "AI Mock Interview App",
       description: "AI-driven mock interview platform with real-time feedback, leveraging Next.js, Clerk authentication, and GenAI to enhance interview preparedness.",
-      tags: ["Next.js", "AI/ML", "Clerk Auth", "GenAI", "React", "TypeScript"],
+      tags: ["Next.js", "Clerk Auth", "GenAI", "React", "Js"],
       liveLink: "https://mock-mateai.vercel.app/",
       githubLink: "https://github.com/amanbind898/ai-mock-interview"
     },
@@ -54,7 +54,7 @@ export default function Projects() {
       image: "/images/cpp.png", // Using existing image as placeholder
       title: "Live Fraud Rule Composer & Transaction Explorer",
       description: "Real-time fraud detection system with rule composer and transaction explorer. Built with advanced algorithms for financial security and risk management.",
-      tags: ["Python", "Machine Learning", "Fraud Detection", "Real-time", "Security"],
+      tags: ["MongoDb", "WebSocket", "rule-based", "Real-time","tool"],
       liveLink: "",
       githubLink: "https://github.com/amanbind898/Live-Fraud-Rule-Composer-Transaction-Explorer"
     },
@@ -62,7 +62,7 @@ export default function Projects() {
       image: "/images/cpp.png", // Using existing image as placeholder
       title: "Full Stack Scraper Challenge",
       description: "Comprehensive web scraping solution with full-stack implementation. Handles complex data extraction and processing with modern web technologies.",
-      tags: ["Web Scraping", "Full Stack", "Python", "React", "Data Processing"],
+      tags: ["Web Scraping", "Full Stack", "Python", "Flask", "Data Processing"],
       liveLink: "",
       githubLink: "https://github.com/amanbind898/Full-Stack-Scraper-Challenge"
     }
