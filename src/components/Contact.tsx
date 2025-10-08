@@ -30,17 +30,21 @@ export default function Contact() {
       formDataToSend.append('email', formData.email)
       formDataToSend.append('message', formData.message)
 
-      const res = await fetch("https://script.google.com/macros/s/AKfycbyd5I2K92oFvQ7_tYsxdOce6344jsZl6g75g8NcBxmJYeA7PvWQP309TDAjYMm1nmZj/exec", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbwZWReGaNVWKtLTgYh9kSLmdOJbsWfXUXOUclg4lzaQpw1_JilQMlQ0VpYILf0RUdPY/exec", {
         method: "POST",
         body: formDataToSend,
-        mode: 'no-cors'
+        // Remove mode: 'no-cors' to read the response
       })
 
-      // Since we're using no-cors, we can't read the response
-      // We'll assume success if no error is thrown
-      setMessage("✅ Message sent successfully!")
-      setFormData({ name: '', email: '', message: '' })
+      const result = await res.json()
+      if (result.status === "success") {
+        setMessage("✅ Message sent successfully!")
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setMessage("❌ Something went wrong. Try again!")
+      }
     } catch (error) {
+      console.error('Error:', error)
       setMessage("❌ Error sending message.")
     }
 

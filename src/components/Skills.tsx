@@ -147,7 +147,7 @@ export default function Skills() {
                 width={300}
                 height={200}
                 className="w-full max-w-[300px] rounded-lg mx-auto"
-                style={{ height: 'auto' }}
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -160,7 +160,7 @@ export default function Skills() {
                   width={300}
                   height={200}
                   className="w-full max-w-[300px] rounded-lg mx-auto"
-                  style={{ height: 'auto' }}
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </a>
             </div>

@@ -1067,7 +1067,8 @@ textarea {
 	.skill-card {
 		padding: 1.5rem;
 	}
-	
+}
+
 /* Contact Section Styles */
 .contact {
 	background: #f8f9fa;
@@ -1081,6 +1082,7 @@ textarea {
 	padding: 4rem;
 	transition: all 0.3s ease;
 	border: 1px solid #e9ecef;
+	margin-bottom: 8rem; /* Larger margin below contact form for desktop */
 }
 
 .contact-form-container:hover {
@@ -1268,6 +1270,7 @@ textarea {
 		padding: 2.5rem;
 		margin: 0 1rem;
 		border-radius: 1.2rem;
+		margin-bottom: 4rem; /* Margin below contact form for mobile */
 	}
 
 	.contact-form-container input,
