@@ -139,7 +139,14 @@ export default function Skills() {
               </a>
             </div>
 
-            <div className="skill-card bg-gray-100 rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
+            <div className="skill-card bg-green-400 rounded-xl shadow-lg p-2 text-center transition-transform hover:-translate-y-2">
+              <h3 className="text-[1.8rem] mb-1 text-gray-800">GeeksforGeeks</h3>
+              <a href="https://www.geeksforgeeks.org/user/akb898/" target="_blank" className="text-purple-700 font-semibold text-[2.4rem] hover:underline">
+                Contest Rating: 1654
+              </a>
+            </div>
+
+            <div className="skill-card bg-gray-100 flex items-center flex-col rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="text-[1.8rem] mb-4 text-gray-800">Codeforces</h3>
               <Image 
                 src="https://codeforces-readme-stats.vercel.app/api/card?username=akb898" 
@@ -151,16 +158,16 @@ export default function Skills() {
               />
             </div>
 
-            <div className="skill-card bg-gray-100 rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
+            <div className="skill-card bg-gray-100  flex items-center flex-col rounded-xl shadow-lg p-1 text-center transition-transform hover:-translate-y-2">
               <h3 className="text-[1.8rem] mb-4 text-gray-800">LeetCode</h3>
               <a href="https://leetcode.com/akb898" target="_blank">
                 <Image 
                   src="https://leetcode-stats.vercel.app/api?username=akb898&theme=Light" 
                   alt="LeetCode Stats" 
-                  width={300}
+                  width={400}
                   height={200}
                   className="w-full max-w-[300px] rounded-lg mx-auto"
-                  style={{ width: 'auto', height: 'auto' }}
+                
                 />
               </a>
             </div>
