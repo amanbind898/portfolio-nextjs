@@ -59,7 +59,7 @@ export default function Contact() {
             Contact
           </span>
           <span className="heading-sec__sub text-center text-gray-700 max-w-[80rem] mx-auto text-[2.2rem] font-medium leading-[1.6] block">
-            Get in touch with me and let's start a conversation. I'm here to listen and collaborate with you.
+            Get in touch with me and let&apos;s start a conversation. I&apos;m here to listen and collaborate with you.
           </span>
         </h2>
 

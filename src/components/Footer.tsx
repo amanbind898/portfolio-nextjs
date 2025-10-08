@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <footer className="footer bg-purple-100 p-8 text-center">
@@ -46,9 +48,11 @@ export default function Footer() {
 
       {/* Visitor counter */}
       <a href="https://visitorbadge.io/status?path=https%3A%2F%2Famanbind898.github.io%2F" className="mt-4 inline-block">
-        <img
+        <Image
           src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Famanbind898.github.io%2F&countColor=%23ba68c8&style=flat&labelStyle=upper"
           alt="Visitor Badge"
+          width={100}
+          height={20}
           className="mx-auto"
         />
       </a>
