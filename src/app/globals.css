@@ -668,8 +668,9 @@ textarea {
 .project-image {
 	width: 100%;
 	height: auto;
-	object-fit: cover;
+	object-fit: contain;
 	display: block;
+	max-height: 300px;
 }
 
 .project-info {
@@ -699,6 +700,11 @@ textarea {
 .project-image-container {
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 250px;
+	background: #f8f9fa;
 }
 
 .project-image-container:hover .project-image {
@@ -788,8 +794,8 @@ textarea {
 	}
 	
 	.project-image {
-		height: 100%;
-		min-height: 35rem;
+		height: auto;
+		max-height: 350px;
 	}
 	
 	.project-info {
@@ -865,7 +871,12 @@ textarea {
 	}
 	
 	.project-image {
-		height: 20rem;
+		height: auto;
+		max-height: 250px;
+	}
+	
+	.project-image-container {
+		min-height: 200px;
 	}
 }
 

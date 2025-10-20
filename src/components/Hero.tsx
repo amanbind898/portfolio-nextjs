@@ -29,7 +29,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="home-hero " style={{ position: 'relative', overflow: 'hidden' } }>
+    <section className="home-hero bg-blend-soft-light" style={{ position: 'relative', overflow: 'hidden' } }>
    
       <div className="home-hero__content">
         <h2 className="heading-primary">
@@ -46,11 +46,7 @@ export default function Hero() {
             </h1>
           </div>
           
-          <div className="home-hero__cta">
-            <a href="#about" className="btn btn--bg">
-              About Me &gt;
-            </a>
-          </div>
+         
         </h2>
 
       </div>

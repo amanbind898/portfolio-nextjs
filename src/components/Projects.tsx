@@ -88,8 +88,8 @@ export default function Projects() {
                   src={project.image} 
                   alt={project.title}
                   width={400}
-                  height={100}
-                  className="project-image w-full h-[25rem] md:h-full object-cover transition-transform hover:scale-105"
+                  height={300}
+                  className="project-image w-full h-auto object-contain transition-transform hover:scale-105 bg-gray-50"
                   loading="lazy"
                 />
               </div>
