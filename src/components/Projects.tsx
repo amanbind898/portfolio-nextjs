@@ -5,8 +5,8 @@ export default function Projects() {
     {
       image: "/images/trade915.png",
       title: "Trade915 : Trading Productivity SaaS Suite",
-      description: "A comprehensive trading productivity platform built with Next.js, MongoDB, and Firebase. Features include Trade Journal, IPO & GMP Tracker, FII/DII Analytics, Market Radar, and real-time news updates. Designed for Indian traders with noise-free dashboards to build discipline and consistency.",
-      tags: ["Next.js", "MongoDB", "Firebase", "TypeScript", "Tailwind CSS", "SaaS"],
+      description: "A comprehensive trading productivity platform built with Next.js, MongoDB, and Firebase backend in Node.js. Features include Trade Journal, IPO & GMP Tracker, FII/DII Analytics, Market Radar, and real-time news updates. Designed for Indian traders with noise-free dashboards to build discipline and consistency.",
+      tags: ["Next.js","Node.js", "MongoDB", "Firebase", "TypeScript", "Tailwind CSS", "SaaS"],
       liveLink: "https://trade915.app/",
       githubLink: "" // Add GitHub link here if available
     },
