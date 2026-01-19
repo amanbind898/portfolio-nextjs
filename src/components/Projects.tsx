@@ -3,6 +3,14 @@ import Image from 'next/image'
 export default function Projects() {
   const projects = [
     {
+      image: "/images/sellary.png", // specific placeholder for Sellary
+      title: "Sellary — Creator Commerce SaaS Platform 2026",
+      description: "Built an end-to-end digital commerce platform enabling creators to sell digital products with automated payment verification and secure post-payment delivery using Razorpay webhooks. Implemented a customizable storefront and mobile-first link-in-bio system. Designed a rule-based content moderation pipeline with text normalization and keyword classification to automatically flag policy-violating products for admin review. Developed a real-time analytics dashboard aggregating sales, platform commissions, and traffic attribution metrics.",
+      tags: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Razorpay API", "Framer Motion"],
+      liveLink: "https://sellary.live/", // Add Live link here
+      githubLink: "" // Add GitHub link here
+    },
+    {
       image: "/images/trade915.png",
       title: "Trade915 : Trading Productivity SaaS Suite",
       description: "A comprehensive trading productivity platform built with Next.js, MongoDB, and Firebase. Features include Trade Journal, IPO & GMP Tracker, FII/DII Analytics, Market Radar, and real-time news updates. Designed for Indian traders with noise-free dashboards to build discipline and consistency.",
@@ -54,7 +62,7 @@ export default function Projects() {
       image: "/images/cpp.png", // Using existing image as placeholder
       title: "Live Fraud Rule Composer & Transaction Explorer",
       description: "Real-time fraud detection system with rule composer and transaction explorer. Built with advanced algorithms for financial security and risk management.",
-      tags: ["MongoDb", "WebSocket", "rule-based", "Real-time","tool"],
+      tags: ["MongoDb", "WebSocket", "rule-based", "Real-time", "tool"],
       liveLink: "",
       githubLink: "https://github.com/amanbind898/Live-Fraud-Rule-Composer-Transaction-Explorer"
     },
@@ -84,8 +92,8 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div key={index} className="project-card flex flex-col md:flex-row bg-white rounded-xl shadow-2xl mb-10 overflow-hidden transition-transform hover:-translate-y-2">
               <div className="project-image-container w-full md:w-2/5 relative overflow-hidden">
-                <Image 
-                  src={project.image} 
+                <Image
+                  src={project.image}
                   alt={project.title}
                   width={400}
                   height={300}
@@ -95,28 +103,28 @@ export default function Projects() {
               </div>
               <div className="project-info w-full md:w-3/5 p-8 md:p-12 flex flex-col">
                 <h3 className="project-title text-[2.5rem] mb-4 text-gray-900 font-bold">{project.title}</h3>
-                
+
                 {/* Tags */}
                 <div className="project-tags mb-4 flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex} 
+                    <span
+                      key={tagIndex}
                       className="tag bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full border border-blue-200"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
+
                 <p className="project-description text-[1.5rem] leading-[1.7] mb-6 text-gray-600 flex-grow">
                   {project.description}
                 </p>
-                
+
                 {/* Action Buttons */}
                 <div className="project-actions flex gap-4 flex-wrap">
                   {project.liveLink && (
-                    <a 
-                      href={project.liveLink} 
+                    <a
+                      href={project.liveLink}
                       className="project-btn project-btn--live btn btn--theme btn--med"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -125,8 +133,8 @@ export default function Projects() {
                     </a>
                   )}
                   {project.githubLink && (
-                    <a 
-                      href={project.githubLink} 
+                    <a
+                      href={project.githubLink}
                       className="project-btn project-btn--github btn btn--med"
                       target="_blank"
                       rel="noopener noreferrer"
