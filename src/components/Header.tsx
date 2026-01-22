@@ -29,19 +29,19 @@ export default function Header() {
   }
 
   return (
-    <header 
+    <header
       className={`navbar  sticky z-50 py-2 ${isVisible ? '' : ''}`}
       style={{ top: isVisible ? '0' : '-90px' }}
     >
       <div className="header-content">
-        <div 
+        <div
           className="header-logo-container"
           onClick={() => window.location.href = '/'}
         >
           <div className="header-logo-img-cont">
-            <Image 
-              src="/apple-icon.png" 
-              alt="Aman bind Logo Image" 
+            <Image
+              src="/apple-icon.png"
+              alt="Aman bind Logo Image"
               width={50}
               height={50}
               className="header-logo-img"
@@ -67,7 +67,7 @@ export default function Header() {
             <li className="header-link-wrapper">
               <a className="header-link" href="https://github.com/amanbind898" target="_blank" rel="noopener noreferrer">
                 <svg className="inline-block w-15 h-10    " viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.2-3.37-1.2-.45-1.17-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.4.21 2.44.11 2.7.64.72 1.02 1.64 1.02 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.2-3.37-1.2-.45-1.17-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.4.21 2.44.11 2.7.64.72 1.02 1.64 1.02 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
                 </svg>
                 GitHub
               </a>
@@ -75,16 +75,16 @@ export default function Header() {
           </ul>
 
           <div className="header-main-ham-menu-cont" onClick={toggleMenu}>
-            <Image 
-              src="https://www.svgrepo.com/show/444626/horizontal-menu.svg" 
-              alt="hamburger menu" 
+            <Image
+              src="https://www.svgrepo.com/show/444626/horizontal-menu.svg"
+              alt="hamburger menu"
               width={30}
               height={30}
               className={`header-main-ham-menu ${isMenuOpen ? 'd-none' : ''}`}
             />
-            <Image 
-              src="https://www.svgrepo.com/show/522087/cross.svg" 
-              alt="hamburger menu close" 
+            <Image
+              src="https://www.svgrepo.com/show/522087/cross.svg"
+              alt="hamburger menu close"
               width={30}
               height={30}
               className={`header-main-ham-menu-close ${isMenuOpen ? '' : 'd-none'}`}
