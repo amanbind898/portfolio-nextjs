@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Projects() {
   const projects = [
     {
-      image: "/images/sellary.png", // specific placeholder for Sellary
+      image: "/images/sellary.png",
       title: "Sellary — Creator Commerce SaaS Platform 2026",
       description: "Built an end-to-end digital commerce platform enabling creators to sell digital products with automated payment verification and secure post-payment delivery using Razorpay webhooks. Implemented a customizable storefront and mobile-first link-in-bio system. Designed a rule-based content moderation pipeline with text normalization and keyword classification to automatically flag policy-violating products for admin review. Developed a real-time analytics dashboard aggregating sales, platform commissions, and traffic attribution metrics.",
       tags: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Razorpay API", "Framer Motion"],
@@ -17,6 +17,13 @@ export default function Projects() {
       tags: ["Next.js","Node.js", "MongoDB", "Firebase", "TypeScript", "Tailwind CSS", "SaaS"],
       liveLink: "https://trade915.app/",
       githubLink: "" // Add GitHub link here if available
+    },
+    {
+      title: "Plant Disease Detection (AgriNet)",
+      description: "A plant disease detection project focused on identifying crop diseases from plant images.",
+      tags: ["Plant Disease Detection", "AgriNet"],
+      liveLink: "",
+      githubLink: ""
     },
     {
       image: "/images/coderstat.png",
@@ -58,22 +65,6 @@ export default function Projects() {
       liveLink: "",
       githubLink: "https://github.com/amanbind898/Student-Report-Card-Management-System"
     },
-    {
-      image: "/images/cpp.png", // Using existing image as placeholder
-      title: "Live Fraud Rule Composer & Transaction Explorer",
-      description: "Real-time fraud detection system with rule composer and transaction explorer. Built with advanced algorithms for financial security and risk management.",
-      tags: ["MongoDb", "WebSocket", "rule-based", "Real-time", "tool"],
-      liveLink: "",
-      githubLink: "https://github.com/amanbind898/Live-Fraud-Rule-Composer-Transaction-Explorer"
-    },
-    {
-      image: "/images/cpp.png", // Using existing image as placeholder
-      title: "Full Stack Scraper Challenge",
-      description: "Comprehensive web scraping solution with full-stack implementation. Handles complex data extraction and processing with modern web technologies.",
-      tags: ["Web Scraping", "Full Stack", "Python", "Flask", "Data Processing"],
-      liveLink: "",
-      githubLink: "https://github.com/amanbind898/Full-Stack-Scraper-Challenge"
-    }
   ]
 
   return (
@@ -84,24 +75,26 @@ export default function Projects() {
             Projects
           </span>
           <span className="heading-sec__sub text-center text-gray-700 max-w-[80rem] mx-auto text-[2.2rem] font-medium leading-[1.6] block">
-            Explore a collection of my meticulously crafted web projects, showcasing my proficiency in modern front-end technologies.
+            A selection of products, platforms, and experiments across game development, full-stack engineering, and machine learning.
           </span>
         </h2>
 
         <div className="projects-container space-y-10">
           {projects.map((project, index) => (
             <div key={index} className="project-card flex flex-col md:flex-row bg-white rounded-xl shadow-2xl mb-10 overflow-hidden transition-transform hover:-translate-y-2">
-              <div className="project-image-container w-full md:w-2/5 relative overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={300}
-                  className="project-image w-full h-auto object-contain transition-transform hover:scale-105 bg-gray-50"
-                  loading="lazy"
-                />
-              </div>
-              <div className="project-info w-full md:w-3/5 p-8 md:p-12 flex flex-col">
+              {project.image && (
+                <div className="project-image-container w-full md:w-2/5 relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={300}
+                    className="project-image w-full h-auto object-contain transition-transform hover:scale-105 bg-gray-50"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div className={`project-info w-full ${project.image ? 'md:w-3/5' : 'md:w-full'} p-8 md:p-12 flex flex-col`}>
                 <h3 className="project-title text-[2.5rem] mb-4 text-gray-900 font-bold">{project.title}</h3>
 
                 {/* Tags */}

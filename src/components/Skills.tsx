@@ -34,6 +34,10 @@ export default function Skills() {
                     <span className="skill-name text-white text-sm mt-2 font-medium">JavaScript</span>
                   </div>
                   <div className="skill-item flex flex-col items-center">
+                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width={50} height={50} className="transition-transform hover:scale-110" />
+                    <span className="skill-name text-white text-sm mt-2 font-medium">TypeScript</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
                     <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width={50} height={50} className="transition-transform hover:scale-110" />
                     <span className="skill-name text-white text-sm mt-2 font-medium">React</span>
                   </div>
@@ -44,6 +48,10 @@ export default function Skills() {
                   <div className="skill-item flex flex-col items-center">
                     <Image src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width={50} height={50} className="transition-transform hover:scale-110" />
                     <span className="skill-name text-white text-sm mt-2 font-medium">Tailwind</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
+                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" width={50} height={50} className="transition-transform hover:scale-110" />
+                    <span className="skill-name text-white text-sm mt-2 font-medium">Vue.js</span>
                   </div>
                 </div>
               </section>
@@ -58,6 +66,10 @@ export default function Skills() {
                   <div className="skill-item flex flex-col items-center">
                     <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width={50} height={50} className="transition-transform hover:scale-110 filter invert" />
                     <span className="skill-name text-white text-sm mt-2 font-medium">Express</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
+                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width={50} height={50} className="transition-transform hover:scale-110" />
+                    <span className="skill-name text-white text-sm mt-2 font-medium">FastAPI</span>
                   </div>
                 </div>
               </section>
@@ -82,6 +94,10 @@ export default function Skills() {
                     <span className="skill-name text-white text-sm mt-2 font-medium">JavaScript</span>
                   </div>
                   <div className="skill-item flex flex-col items-center">
+                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width={50} height={50} className="transition-transform hover:scale-110" />
+                    <span className="skill-name text-white text-sm mt-2 font-medium">TypeScript</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
                     <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width={50} height={50} className="transition-transform hover:scale-110" />
                     <span className="skill-name text-white text-sm mt-2 font-medium">MySQL</span>
                   </div>
@@ -98,6 +114,24 @@ export default function Skills() {
                   <div className="skill-item flex flex-col items-center">
                     <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width={50} height={50} className="transition-transform hover:scale-110" />
                     <span className="skill-name text-white text-sm mt-2 font-medium">PostgreSQL</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
+                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" width={50} height={50} className="transition-transform hover:scale-110" />
+                    <span className="skill-name text-white text-sm mt-2 font-medium">Redis</span>
+                  </div>
+                </div>
+              </section>
+
+              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
+                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Game Development</h2>
+                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
+                  <div className="skill-item flex flex-col items-center">
+                    <span className="flex h-[50px] w-[50px] items-center justify-center text-white text-2xl font-bold">P</span>
+                    <span className="skill-name text-white text-sm mt-2 font-medium">PixiJS</span>
+                  </div>
+                  <div className="skill-item flex flex-col items-center">
+                    <span className="flex h-[50px] w-[50px] items-center justify-center text-white text-xl font-bold">&lt;/&gt;</span>
+                    <span className="skill-name text-white text-sm mt-2 font-medium">HTML5 Canvas</span>
                   </div>
                 </div>
               </section>
@@ -135,7 +169,7 @@ export default function Skills() {
             <div className="skill-card bg-gray-100 rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="text-[1.8rem] mb-4 text-gray-800">CodeChef</h3>
               <a href="https://www.codechef.com/users/akb898" target="_blank" className="text-purple-700 font-semibold text-[2.4rem] hover:underline">
-                ⭐ 2-Star (Max Rating: 1507)
+                ⭐ 2-Star (Max Rating: 1505)
               </a>
             </div>
 

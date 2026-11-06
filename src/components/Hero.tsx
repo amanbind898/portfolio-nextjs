@@ -12,6 +12,7 @@ export default function Hero() {
         // @ts-expect-error Typed.js is loaded dynamically and not typed
         new window.Typed('.rolling', {
           strings: [
+            "Game Developer",
             "Student @ IIIT BH",
             "Web Developer",
             "Student @ IIIT BH",

@@ -62,6 +62,9 @@ export default function Header() {
               <a className="header-link" href="#projects">Projects</a>
             </li>
             <li className="header-link-wrapper">
+              <a className="header-link" href="#experience">Experience</a>
+            </li>
+            <li className="header-link-wrapper">
               <a className="header-link" href="#contact">Contact</a>
             </li>
             <li className="header-link-wrapper">
@@ -104,6 +107,9 @@ export default function Header() {
             </li>
             <li className="header__sm-menu-link">
               <a href="#projects" onClick={closeMenu}>Projects</a>
+            </li>
+            <li className="header__sm-menu-link">
+              <a href="#experience" onClick={closeMenu}>Experience</a>
             </li>
             <li className="header__sm-menu-link">
               <a href="#contact" onClick={closeMenu}>Contact</a>

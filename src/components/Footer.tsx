@@ -15,7 +15,7 @@ export default function Footer() {
             <ul className="flex items-center justify-center gap-4 sm:gap-5">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/aman-bind-306152289"
+                  href="https://www.linkedin.com/in/amankumarbind"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -39,32 +39,6 @@ export default function Footer() {
                   </svg>
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://x.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="X (Twitter)"
-                  className="group inline-flex h-16 w-16 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition hover:text-blue-500 hover:border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
-                >
-                  <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden>
-                    <path fill="currentColor" d="M18.244 3H21l-6.56 7.49L22 21h-5.78l-4.52-5.46L6.4 21H3.64l6.98-7.97L2 3h5.86l4.08 4.9L18.24 3h.004zM8.3 4.6H5.92l9.88 12.1h2.38L8.3 4.6z"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="group inline-flex h-16 w-16 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition hover:text-pink-600 hover:border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-500/30"
-                >
-                  <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden>
-                    <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 .001 7.001A3.5 3.5 0 0 0 12 9.5zM18.5 6A1.5 1.5 0 1 1 17 7.5 1.5 1.5 0 0 1 18.5 6z"/>
-                  </svg>
-                </a>
-              </li>
             </ul>
           </nav>
 
@@ -74,15 +48,15 @@ export default function Footer() {
 
           <figure className="mt-2">
             <a
-              href="https://visitorbadge.io/status?path=https%3A%2F%2Famanbind898.github.io%2F"
+              href="https://visitorbadge.io/status?path=https%3A%2F%2Famanbind.vercel.app%2F"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visitor badge details"
               className="inline-block"
             >
               <Image
-                src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Famanbind898.github.io%2F&countColor=%23ba68c8&style=flat&labelStyle=upper"
-                alt="Visitors to amanbind898.github.io"
+                src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Famanbind.vercel.app%2F&countColor=%23ba68c8&style=flat&labelStyle=upper"
+                alt="Visitors to amanbind.vercel.app"
                 width={140}
                 height={28}
                 sizes="140px"

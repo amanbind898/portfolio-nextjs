@@ -9,19 +9,7 @@ export default function About() {
             About <span style={{ color: 'rgb(55, 0, 255)' }}>Me</span>
           </span>
           <span className="heading-sec__sub">
-            I&apos;m <strong>Aman Bind</strong>, a passionate <em>4th-year</em> B.Tech student at <strong>IIIT Bhagalpur</strong>, pursuing <em>Computer Science and Engineering</em>.
-            Originally from <strong>Azamgarh, Uttar Pradesh</strong>, I have a deep interest in <em>coding, web development, and problem-solving</em>.
-
-            My journey in technology has been driven by curiosity and a desire to build impactful solutions.
-            I enjoy working on <em>full-stack web development</em>, exploring <em>AI-driven applications</em>, and continuously refining my coding skills.
-            Whether it&apos;s crafting scalable web applications or tackling complex problems, I thrive on challenges that push me to learn and innovate.
-
-            As a final-year student actively looking for a <strong>stable, growth-oriented job opportunity</strong>, I&apos;m keen to apply my skills in a professional environment where I can contribute meaningfully.
-
-            Beyond academics, I actively participate in <em>hackathons, coding competitions, and open-source projects</em>, aiming to expand my knowledge and collaborate with like-minded developers.
-            I believe in lifelong learning and I&apos;m always open to new opportunities, collaborations, and exciting projects.
-
-            Let&apos;s connect and build something amazing together! 🚀
+            I&apos;m Aman Bind, a Game Developer at Ingenuity Gaming in Noida, where I build HTML5 slot games using TypeScript and PixiJS. I graduated in Computer Science and Engineering from IIIT Bhagalpur in 2026. Before games, I built full-stack products, including Sellary, a creator-commerce SaaS, and Trade 9:15, a trading platform used by 50+ Indian traders. I enjoy 2D rendering, animation, and performance work, as well as backend and system design. Outside work, I solve DSA problems (800+ across platforms) and contribute to open source.
           </span>
         </h2>
 
@@ -41,7 +29,7 @@ export default function About() {
                 <div className="timeline-year" style={{ fontSize: 'large' }}>2022–2026</div>
                 <div className="timeline-content">
                   <h3>B.Tech. Computer Science and Engineering</h3>
-                  <p>Currently in 4th year at Indian Institute of Information Technology, Bhagalpur.</p>
+                  <p>Graduated 2026 · CGPA 7.85 at Indian Institute of Information Technology, Bhagalpur.</p>
                 </div>
               </div>
 

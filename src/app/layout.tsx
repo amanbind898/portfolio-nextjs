@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://amanbind.vercel.app'),
-  title: "Aman Bind | Full Stack Developer | IIIT BH'26",
-  description: "Passionate Full Stack Developer and 4th-year Computer Science student at IIIT Bhagalpur. Specializing in React, Next.js, Node.js, and modern web technologies. Building flawless digital solutions with expertise in frontend, backend, and competitive programming.",
+  title: "Aman Bind | Game Developer & Full Stack Engineer",
+  description: "Game Developer at Ingenuity Gaming building HTML5 slot games with TypeScript and PixiJS. IIIT Bhagalpur CSE '26. Full-stack experience with Next.js, Node.js, and PostgreSQL.",
   keywords: [
     "Aman Bind",
     "Full Stack Developer",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Aman Bind | Full Stack Developer | IIIT BH'26",
-    description: "Passionate Full Stack Developer and 4th-year Computer Science student at IIIT Bhagalpur. Specializing in React, Next.js, Node.js, and modern web technologies.",
+    title: "Aman Bind | Game Developer & Full Stack Engineer",
+    description: "Game Developer at Ingenuity Gaming building HTML5 slot games with TypeScript and PixiJS. IIIT Bhagalpur CSE '26. Full-stack experience with Next.js, Node.js, and PostgreSQL.",
     url: "https://amanbind.vercel.app",
     siteName: "Aman Bind Portfolio",
     images: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/images/portfolio-preview.png",
         width: 1200,
         height: 630,
-        alt: "Aman Bind - Full Stack Developer Portfolio",
+        alt: "Aman Bind - Game Developer and Full Stack Engineer Portfolio",
       },
     ],
     locale: "en_US",
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aman Bind | Full Stack Developer | IIIT BH'26",
-    description: "Passionate Full Stack Developer and 4th-year Computer Science student at IIIT Bhagalpur. Specializing in React, Next.js, Node.js, and modern web technologies.",
+    title: "Aman Bind | Game Developer & Full Stack Engineer",
+    description: "Game Developer at Ingenuity Gaming building HTML5 slot games with TypeScript and PixiJS. IIIT Bhagalpur CSE '26. Full-stack experience with Next.js, Node.js, and PostgreSQL.",
     images: ["/images/portfolio-preview.png"],
     creator: "@amanbind898",
   },
@@ -76,14 +76,6 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: "your-google-verification-code", // Add your Google Search Console code
-    yandex: "your-yandex-verification-code", // Add if you have Yandex verification
-    yahoo: "your-yahoo-verification-code", // Add if you have Yahoo verification
-    other: {
-      'msvalidate.01': "your-bing-verification-code", // Add your Bing verification code
     },
   },
   alternates: {
