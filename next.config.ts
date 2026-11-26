@@ -29,6 +29,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'api.visitorbadge.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
       }
     ]
   }

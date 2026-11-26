@@ -39,6 +39,19 @@ export default function Footer() {
                   </svg>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@technologicalaman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                  className="group inline-flex h-16 w-16 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition hover:text-red-600 hover:border-red-200 focus:outline-none focus:ring-2 focus:ring-red-500/40"
+                >
+                  <svg viewBox="0 0 24 24" className="h-8 w-8" aria-hidden>
+                    <path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </nav>
 
