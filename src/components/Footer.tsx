@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="w-full bg-purple-50 border-t border-purple-200 flex justify-center py-10">
+    <footer className="site-footer w-full bg-white border-t border-[#ecebf5] flex justify-center py-10">
       <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 py-10">
         <div className="flex flex-col items-center justify-center text-center gap-4">
           <p className="text-2xl sm:text-3xl text-gray-900">

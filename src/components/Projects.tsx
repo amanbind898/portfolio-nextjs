@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { ArrowUpRight, Github } from 'lucide-react'
+import SectionHeading from '@/components/ui/SectionHeading'
 
 export default function Projects() {
   const projects = [
@@ -68,76 +70,70 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="projects py-48">
-      <div className="main-container flex flex-col items-center w-[92%] max-w-[120rem] mx-auto">
-        <h2 className="heading heading-sec heading-sec__mb-bg mb-44">
-          <span className="heading-sec__main uppercase tracking-[3px] text-center mb-14 text-[4rem] block relative after:content-[''] after:bg-primary after:rounded-md after:w-12 after:h-[5px] after:absolute after:top-[calc(100%+1.5rem)] after:left-1/2 after:transform after:-translate-x-1/2">
-            Projects
-          </span>
-          <span className="heading-sec__sub text-center text-gray-700 max-w-[80rem] mx-auto text-[2.2rem] font-medium leading-[1.6] block">
-            A selection of products, platforms, and experiments across game development, full-stack engineering, and machine learning.
-          </span>
-        </h2>
+    <section id="projects" className="section section--soft">
+      <div className="wrap">
+        <SectionHeading
+          eyebrow="Projects"
+          title="Things I've built"
+          sub="A selection of products, platforms, and experiments across game development, full-stack engineering, and machine learning."
+        />
 
-        <div className="projects-container space-y-10">
+        <div className="projects-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card flex flex-col md:flex-row bg-white rounded-xl shadow-2xl mb-10 overflow-hidden transition-transform hover:-translate-y-2">
-              {project.image && (
-                <div className="project-image-container w-full md:w-2/5 relative overflow-hidden">
+            <article key={project.title} className="card project">
+              <div className="project__media">
+                {project.image ? (
                   <Image
                     src={project.image}
-                    alt={project.title}
-                    width={400}
-                    height={300}
-                    className="project-image w-full h-auto object-contain transition-transform hover:scale-105 bg-gray-50"
+                    alt={`Screenshot of ${project.title}`}
+                    width={800}
+                    height={500}
+                    className="project__img"
                     loading="lazy"
                   />
-                </div>
-              )}
-              <div className={`project-info w-full ${project.image ? 'md:w-3/5' : 'md:w-full'} p-8 md:p-12 flex flex-col`}>
-                <h3 className="project-title text-[2.5rem] mb-4 text-gray-900 font-bold">{project.title}</h3>
-
-                {/* Tags */}
-                <div className="project-tags mb-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="tag bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full border border-blue-200"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <p className="project-description text-[1.5rem] leading-[1.7] mb-6 text-gray-600 flex-grow">
-                  {project.description}
-                </p>
-
-                {/* Action Buttons */}
-                <div className="project-actions flex gap-4 flex-wrap">
-                  {project.liveLink && (
-                    <a
-                      href={project.liveLink}
-                      className="project-btn project-btn--live btn btn--theme btn--med"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      🚀 Live Demo
-                    </a>
-                  )}
-                  {project.githubLink && (
-                    <a
-                      href={project.githubLink}
-                      className="project-btn project-btn--github btn btn--med"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      📂 View Code
-                    </a>
-                  )}
-                </div>
+                ) : (
+                  <span className="project__placeholder" aria-hidden="true">
+                    {project.title.charAt(0)}
+                  </span>
+                )}
+                {index < 2 && <span className="project__badge">Featured</span>}
               </div>
-            </div>
+
+              <div className="project__body">
+                <h3 className="project__title">{project.title}</h3>
+                <p className="project__desc">{project.description}</p>
+                <ul className="project__tags" aria-label="Tech stack">
+                  {project.tags.map((tag) => (
+                    <li key={tag} className="tag-chip">{tag}</li>
+                  ))}
+                </ul>
+
+                {(project.liveLink || project.githubLink) && (
+                  <div className="project__actions">
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        className="button button--primary button--sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live demo <ArrowUpRight aria-hidden="true" />
+                      </a>
+                    )}
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        className="button button--ghost button--sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github aria-hidden="true" /> Code
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </article>
           ))}
         </div>
       </div>

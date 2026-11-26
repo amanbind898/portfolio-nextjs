@@ -1,211 +1,150 @@
 import Image from 'next/image'
+import SectionHeading from '@/components/ui/SectionHeading'
+
+const DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
+
+type Skill = { name: string; icon?: string }
+
+const groups: { title: string; skills: Skill[] }[] = [
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'HTML', icon: `${DEVICON}/html5/html5-original.svg` },
+      { name: 'CSS', icon: `${DEVICON}/css3/css3-original.svg` },
+      { name: 'JavaScript', icon: `${DEVICON}/javascript/javascript-original.svg` },
+      { name: 'TypeScript', icon: `${DEVICON}/typescript/typescript-original.svg` },
+      { name: 'React', icon: `${DEVICON}/react/react-original.svg` },
+      { name: 'Next.js', icon: `${DEVICON}/nextjs/nextjs-original.svg` },
+      { name: 'Tailwind', icon: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' },
+      { name: 'Vue.js', icon: `${DEVICON}/vuejs/vuejs-original.svg` },
+    ],
+  },
+  {
+    title: 'Game Development',
+    skills: [{ name: 'PixiJS' }, { name: 'HTML5 Canvas' }],
+  },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'Node.js', icon: `${DEVICON}/nodejs/nodejs-original.svg` },
+      { name: 'Express', icon: `${DEVICON}/express/express-original.svg` },
+      { name: 'FastAPI', icon: `${DEVICON}/fastapi/fastapi-original.svg` },
+    ],
+  },
+  {
+    title: 'Languages',
+    skills: [
+      { name: 'C', icon: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png' },
+      { name: 'C++', icon: `${DEVICON}/cplusplus/cplusplus-original.svg` },
+      { name: 'Python', icon: `${DEVICON}/python/python-original.svg` },
+      { name: 'JavaScript', icon: `${DEVICON}/javascript/javascript-original.svg` },
+      { name: 'TypeScript', icon: `${DEVICON}/typescript/typescript-original.svg` },
+      { name: 'MySQL', icon: `${DEVICON}/mysql/mysql-original.svg` },
+    ],
+  },
+  {
+    title: 'Databases',
+    skills: [
+      { name: 'MongoDB', icon: `${DEVICON}/mongodb/mongodb-original.svg` },
+      { name: 'PostgreSQL', icon: `${DEVICON}/postgresql/postgresql-original.svg` },
+      { name: 'Redis', icon: `${DEVICON}/redis/redis-original.svg` },
+    ],
+  },
+  {
+    title: 'Tools',
+    skills: [
+      { name: 'VS Code', icon: `${DEVICON}/vscode/vscode-original.svg` },
+      { name: 'GitHub', icon: `${DEVICON}/github/github-original.svg` },
+      { name: 'Postman', icon: `${DEVICON}/postman/postman-original.svg` },
+      { name: 'Docker', icon: `${DEVICON}/docker/docker-original.svg` },
+    ],
+  },
+]
 
 export default function Skills() {
   return (
-    <section id="skills" className="about bg-gray-50 py-48">
-      <div className="main-container flex flex-col items-center w-[92%] max-w-[120rem] mx-auto">
-        <h2 className="heading heading-sec heading-sec__mb-med">
-          <span className="heading-sec__main uppercase tracking-[3px] text-center mb-14 text-[4rem] block relative after:content-[''] after:bg-primary after:rounded-md after:w-12 after:h-[5px] after:absolute after:top-[calc(100%+1.5rem)] after:left-1/2 after:transform after:-translate-x-1/2">
-            My Skills
-          </span>
-          <span className="heading-sec__sub text-center text-gray-700 max-w-[80rem] mx-auto text-[2.2rem] font-medium leading-[1.6] block">
-            With my diverse skillset, I offer a unique, attractive combination that sets me apart.
-          </span>
-        </h2>
+    <section id="skills" className="section section--soft">
+      <div className="wrap">
+        <SectionHeading
+          eyebrow="Skills"
+          title="Tools I build with"
+          sub="From game rendering to full-stack products, plus a strong foundation in DSA, AI and machine learning with Python."
+        />
 
-        <div className="about__content grid grid-cols-1 lg:grid-cols-2 gap-40">
-          <div className="about__content-skills">
-            <div className="dev-skill-wrapper bg-purple-100 p-8 max-w-[1000px] mx-auto rounded-xl text-gray-800">
-              <h1 className="dev-skill-title text-center text-[2.5rem] text-purple-800 mb-8">My Tech Stack</h1>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Frontend Development</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">HTML</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">CSS</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">JavaScript</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">TypeScript</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">React</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" alt="Next.js" width={50} height={50} className="transition-transform hover:scale-110 filter invert" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Next.js</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Tailwind</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Vue.js</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Backend Development</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Node.js</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width={50} height={50} className="transition-transform hover:scale-110 filter invert" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Express</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">FastAPI</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Programming Languages</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">C</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">C++</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Python</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">JavaScript</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">TypeScript</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">MySQL</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Database</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">MongoDB</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">PostgreSQL</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Redis</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Game Development</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <span className="flex h-[50px] w-[50px] items-center justify-center text-white text-2xl font-bold">P</span>
-                    <span className="skill-name text-white text-sm mt-2 font-medium">PixiJS</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <span className="flex h-[50px] w-[50px] items-center justify-center text-white text-xl font-bold">&lt;/&gt;</span>
-                    <span className="skill-name text-white text-sm mt-2 font-medium">HTML5 Canvas</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">Developer Tools</h2>
-                <div className="dev-skill-icons flex justify-center flex-wrap gap-6">
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">VSCode</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width={50} height={50} className="transition-transform hover:scale-110 filter invert" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">GitHub</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Postman</span>
-                  </div>
-                  <div className="skill-item flex flex-col items-center">
-                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width={50} height={50} className="transition-transform hover:scale-110" />
-                    <span className="skill-name text-white text-sm mt-2 font-medium">Docker</span>
-                  </div>
-                </div>
-              </section>
-
-              <section className="dev-skill-section bg-purple-400 p-6 rounded-lg mb-6 shadow-lg">
-                <h2 className="dev-skill-heading text-[1.5rem] text-white mb-4 text-center">DSA, AI & ML</h2>
-                <p className="text-center text-lg font-normal">Strong foundation in Data Structures & Algorithms, AI concepts, and Machine Learning with Python.</p>
-              </section>
+        <div className="skills-grid">
+          {groups.map((group) => (
+            <div key={group.title} className="card skills-card">
+              <h3 className="card__title">{group.title}</h3>
+              <ul className="chips">
+                {group.skills.map((skill) => (
+                  <li key={skill.name} className="chip">
+                    {skill.icon ? (
+                      <Image src={skill.icon} alt="" width={20} height={20} className="chip__icon" />
+                    ) : (
+                      <span className="chip__mono" aria-hidden="true">
+                        {skill.name[0]}
+                      </span>
+                    )}
+                    {skill.name}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
+          ))}
+        </div>
 
-          <div className="skills grid grid-cols-1 gap-8 p-8">
-            <div className="skill-card bg-gray-100 rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
-              <h3 className="text-[1.8rem] mb-4 text-gray-800">CodeChef</h3>
-              <a href="https://www.codechef.com/users/akb898" target="_blank" className="text-purple-700 font-semibold text-[2.4rem] hover:underline">
-                ⭐ 2-Star (Max Rating: 1505)
-              </a>
-            </div>
-
-            <div className="skill-card bg-green-400 rounded-xl shadow-lg p-2 text-center transition-transform hover:-translate-y-2">
-              <h3 className="text-[1.8rem] mb-1 text-gray-800">GeeksforGeeks</h3>
-              <a href="https://www.geeksforgeeks.org/user/akb898/" target="_blank" className="text-purple-700 font-semibold text-[2.4rem] hover:underline">
-                Contest Rating: 1654
-              </a>
-            </div>
-
-            <div className="skill-card bg-gray-100 flex items-center flex-col rounded-xl shadow-lg p-8 text-center transition-transform hover:-translate-y-2">
-              <h3 className="text-[1.8rem] mb-4 text-gray-800">Codeforces</h3>
-              <Image 
-                src="https://codeforces-readme-stats.vercel.app/api/card?username=akb898" 
-                alt="Codeforces Stats" 
-                width={300}
-                height={200}
-                className="w-full max-w-[300px] rounded-lg mx-auto"
-                style={{ width: 'auto', height: 'auto' }}
-              />
-            </div>
-
-            <div className="skill-card bg-gray-100  flex items-center flex-col rounded-xl shadow-lg p-1 text-center transition-transform hover:-translate-y-2">
-              <h3 className="text-[1.8rem] mb-4 text-gray-800">LeetCode</h3>
-              <a href="https://leetcode.com/akb898" target="_blank">
-                <Image 
-                  src="https://leetcode-stats.vercel.app/api?username=akb898&theme=Light" 
-                  alt="LeetCode Stats" 
-                  width={400}
-                  height={200}
-                  className="w-full max-w-[300px] rounded-lg mx-auto"
-                
-                />
-              </a>
-            </div>
-          </div>
+        <h3 className="subhead">Competitive programming</h3>
+        <div className="profiles-grid">
+          <a
+            href="https://www.codechef.com/users/akb898"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card profile-stat"
+          >
+            <span className="profile-stat__site">CodeChef</span>
+            <span className="profile-stat__value">2★</span>
+            <span className="profile-stat__label">Max rating 1505</span>
+          </a>
+          <a
+            href="https://www.geeksforgeeks.org/user/akb898/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card profile-stat"
+          >
+            <span className="profile-stat__site">GeeksforGeeks</span>
+            <span className="profile-stat__value">1654</span>
+            <span className="profile-stat__label">Contest rating</span>
+          </a>
+          <a
+            href="https://codeforces.com/profile/akb898"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card profile-card"
+          >
+            <span className="profile-stat__site">Codeforces</span>
+            <Image
+              src="https://codeforces-readme-stats.vercel.app/api/card?username=akb898"
+              alt="Codeforces stats for akb898"
+              width={300}
+              height={200}
+              className="profile-card__img"
+            />
+          </a>
+          <a
+            href="https://leetcode.com/akb898"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card profile-card"
+          >
+            <span className="profile-stat__site">LeetCode</span>
+            <Image
+              src="https://leetcode-stats.vercel.app/api?username=akb898&theme=Light"
+              alt="LeetCode stats for akb898"
+              width={400}
+              height={200}
+              className="profile-card__img"
+            />
+          </a>
         </div>
       </div>
     </section>

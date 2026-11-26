@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { Github, Linkedin, Send, Youtube } from 'lucide-react'
+import SectionHeading from '@/components/ui/SectionHeading'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -51,62 +53,75 @@ export default function Contact() {
     setLoading(false)
   }
 
-  return (
-    <section id="contact" className="contact py-48">
-      <div className="main-container flex flex-col items-center w-[92%] max-w-[120rem] mx-auto">
-        <h2 className="heading heading-sec heading-sec__mb-med">
-          <span className="heading-sec__main uppercase tracking-[3px] text-center mb-14 text-[4rem] block relative after:content-[''] after:bg-primary after:rounded-md after:w-12 after:h-[5px] after:absolute after:top-[calc(100%+1.5rem)] after:left-1/2 after:transform after:-translate-x-1/2">
-            Contact
-          </span>
-          <span className="heading-sec__sub text-center text-gray-700 max-w-[80rem] mx-auto text-[2.2rem] font-medium leading-[1.6] block">
-            Get in touch with me and let&apos;s start a conversation. I&apos;m here to listen and collaborate with you.
-          </span>
-        </h2>
+  const links = [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/amankumarbind', Icon: Linkedin },
+    { label: 'GitHub', href: 'https://github.com/amanbind898', Icon: Github },
+    { label: 'YouTube', href: 'https://www.youtube.com/@technologicalaman', Icon: Youtube },
+  ]
 
-        <form
-          className="contact-form-container w-[95%] max-w-[80rem] p-16"
-          onSubmit={handleSubmit}
-        >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-8 text-[1.6rem] border border-gray-300 rounded-md mb-8"
-            required
+  return (
+    <section id="contact" className="section">
+      <div className="wrap contact-grid">
+        <div className="contact-intro">
+          <SectionHeading
+            align="left"
+            eyebrow="Contact"
+            title="Let's build something"
+            sub="Have a role, a project or just a question? Send a message and I'll get back to you."
           />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-8 text-[1.6rem] border border-gray-300 rounded-md mb-8"
-            required
-          />
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-8 text-[1.6rem] border border-gray-300 rounded-md mb-8 h-40 resize-none"
-            required
-          />
-          <div className="text-center">
-            <button
-              type="submit"
-              className="contact__btn w-full md:w-[30%] px-16 py-8 text-[1.6rem] bg-gray-800 text-white border-none rounded-md cursor-pointer hover:bg-gray-700 transition-colors"
-              disabled={loading}
-            >
-              {loading ? 'Sending...' : 'Submit'}
-            </button>
-          </div>
+          <ul className="contact-links">
+            {links.map(({ label, href, Icon }) => (
+              <li key={label}>
+                <a href={href} target="_blank" rel="noopener noreferrer" className="contact-link">
+                  <Icon aria-hidden="true" /> {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <form className="card contact-form" onSubmit={handleSubmit}>
+          <label className="field">
+            <span className="field__label">Name</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label className="field">
+            <span className="field__label">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label className="field">
+            <span className="field__label">Message</span>
+            <textarea
+              name="message"
+              placeholder="Tell me a little about it"
+              rows={5}
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <button type="submit" className="button button--primary button--block" disabled={loading}>
+            {loading ? 'Sending…' : (<>Send message <Send aria-hidden="true" /></>)}
+          </button>
           {message && (
-            <p className="text-center mt-4 text-lg font-medium" style={{ color: message.includes('✅') ? '#28a745' : '#dc3545' }}>
+            <p
+              className={`form-status ${message.includes('✅') ? 'form-status--ok' : 'form-status--err'}`}
+              role="status"
+            >
               {message}
             </p>
           )}
