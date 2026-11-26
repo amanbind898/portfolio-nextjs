@@ -3,7 +3,7 @@ import SectionHeading from '@/components/ui/SectionHeading'
 
 const DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
 
-type Skill = { name: string; icon?: string }
+type Skill = { name: string; icon?: string; wide?: boolean }
 
 const groups: { title: string; skills: Skill[] }[] = [
   {
@@ -21,7 +21,10 @@ const groups: { title: string; skills: Skill[] }[] = [
   },
   {
     title: 'Game Development',
-    skills: [{ name: 'PixiJS' }, { name: 'HTML5 Canvas' }],
+    skills: [
+      { name: 'PixiJS', icon: '/images/skills/pixijs.png', wide: true },
+      { name: 'HTML5 Canvas', icon: '/images/skills/html5.png' },
+    ],
   },
   {
     title: 'Backend',
@@ -79,7 +82,13 @@ export default function Skills() {
                 {group.skills.map((skill) => (
                   <li key={skill.name} className="chip">
                     {skill.icon ? (
-                      <Image src={skill.icon} alt="" width={20} height={20} className="chip__icon" />
+                      <Image
+                        src={skill.icon}
+                        alt=""
+                        width={skill.wide ? 51 : 20}
+                        height={20}
+                        className={`chip__icon ${skill.wide ? 'chip__icon--wide' : ''}`}
+                      />
                     ) : (
                       <span className="chip__mono" aria-hidden="true">
                         {skill.name[0]}

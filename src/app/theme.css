@@ -232,6 +232,11 @@ body {
 	object-fit: contain;
 }
 
+.chip__icon--wide {
+	width: auto;
+	height: 2rem;
+}
+
 .chip__mono {
 	display: grid;
 	place-items: center;
@@ -783,13 +788,13 @@ body {
 .project__img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: top center;
+	object-fit: contain;
+	object-position: center; padding: 1.6rem;
 	transition: transform 0.5s ease;
 }
 
 .project:hover .project__img {
-	transform: scale(1.04);
+	transform: translateY(-4px);
 }
 
 .project__placeholder {
@@ -1005,4 +1010,30 @@ body {
 	.card,
 	.project,
 	.project__img { transition: none; }
+}
+
+/* Designer fonts: Clash Display (headings) + Satoshi (body), served by Fontshare (ITF Free Font License) */
+:root {
+  --font: 'Satoshi', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Clash Display', 'Satoshi', system-ui, sans-serif;
+}
+
+.hero__title,
+.section-head__title,
+.subhead,
+.id-card__name,
+.project__title,
+.xp__role,
+.card__title,
+.hero__stat dd,
+.profile-stat__value,
+.yt__title,
+.header-logo-sub {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.hero__title {
+  letter-spacing: -0.02em;
 }

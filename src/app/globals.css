@@ -5,43 +5,6 @@
 	font-family: 'Hesterica';
 }
 
-@font-face{
-    src: url(/fonts/Gilroy-Black.ttf);
-    font-family: 'GilroyBlack';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Bold.ttf);
-    font-family: 'GilroyBold';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Extrabold.ttf);
-    font-family: 'GilroyExtrabold';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Heavy.ttf);
-    font-family: 'GilroyHeavy';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Light.ttf);
-    font-family: 'GilroyLight';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Medium.ttf);
-    font-family: 'GilroyMedium';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Regular.ttf);
-    font-family: 'GilroyRegular';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Semibold.ttf);
-    font-family: 'GilroySemibold';
-}
-@font-face{
-    src: url(/fonts/Gilroy-Thin.ttf);
-    font-family: 'GilroyThin';
-}
-
 *,
 :after,
 :before {
@@ -58,7 +21,7 @@ html {
 
 body {
 	box-sizing: border-box;
-	font-family: 'Signika', sans-serif;
+	font-family: 'Satoshi', system-ui, sans-serif;
 	line-height: 1.5;
 	position: relative;
 	overflow-x: hidden;
@@ -315,7 +278,7 @@ textarea {
 }
 
 .home-hero__info h1 {
-	font-family: "GilroyRegular";
+	font-family: inherit;
     font-size: 1.5em;
     font-weight: 600;
     /* margin-top: 50px; */
@@ -450,7 +413,7 @@ textarea {
 
 .header-link {
 	color: #333;
-	font-family: GilroyRegular;
+	font-family: inherit;
 	letter-spacing: 1px;
 	padding: 2.2rem 3rem;
 	font-size: 1.6rem;
@@ -1364,7 +1327,7 @@ textarea {
 
 .yt__title {
 	margin: 2.4rem 0 2rem;
-	font-family: "GilroyRegular", sans-serif;
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 5.2rem;
 	line-height: 1.12;

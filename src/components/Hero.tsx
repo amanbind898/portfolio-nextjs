@@ -37,10 +37,7 @@ export default function Hero() {
       <span className="hero__glow" aria-hidden="true" />
       <div className="wrap hero__inner">
         <div className="hero__copy">
-          <span className="pill">
-            <span className="pill__dot" aria-hidden="true" />
-            Game Developer · Ingenuity Gaming
-          </span>
+        
 
           <h1 className="hero__title">
             Hey, I&apos;m Aman.
